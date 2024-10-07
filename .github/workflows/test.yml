@@ -14,8 +14,10 @@ jobs:
         with:
           python-version: "3.9"
 
-      - name: install pip
-        run: pip install -r requirements.txt
+      - name: install dependencies
+        run: | 
+        pip install -r requirements.txt
+        
 
       - name: run app
         run: python test_app.py

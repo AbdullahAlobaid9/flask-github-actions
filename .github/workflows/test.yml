@@ -12,11 +12,10 @@ jobs:
       - name: install python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: "3.9"
 
       - name: install pip
-        run: |
-        pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
-      - name: run app 
+      - name: run app
         run: python test_app.py

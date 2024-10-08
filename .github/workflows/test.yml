@@ -7,14 +7,15 @@ on:
 
 jobs:
   pytest:
-    - name: Copies the code
-      uses: actions/checkout@v4
+    steps:
+      - name: Copies the code
+        uses: actions/checkout@v4
 
-    - name:
-    - uses: actions/setup-python@v5
-      with:
-        python-version: "3.9"
-      run: pip install -r requirements.txt
+      - name:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.9"
+        run: pip install -r requirements.txt
 
-    - name: Run the test
-      run: docker compose run test
+      - name: Run the test
+        run: docker compose run test

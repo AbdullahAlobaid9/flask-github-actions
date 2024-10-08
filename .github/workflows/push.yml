@@ -1,14 +1,15 @@
 name: Push docker image
 
-on: push
-  branches:
-    - main
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build-run-docker:
     runs-on: ubuntu-latest
     steps:
-      - name: Copying code 
+      - name: Copying code
         uses: actions/checkout@v4
 
       - name: Set up Docker Buildx

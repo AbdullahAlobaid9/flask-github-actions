@@ -29,4 +29,4 @@ jobs:
             afalobaid9/flask-app:latest
             afalobaid9/flask-app:${{ github.sha }}
           cache-from: type=registry, ref=afalobaid9/flask-app:latest
-          cache-to: type=registry, ref=afalobaid9/flask-app:${{ github.sha }}, mode=max
+          cache-to: type=registry, ref=afalobaid9/flask-app:${{ github.sha }}

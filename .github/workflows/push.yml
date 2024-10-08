@@ -26,5 +26,5 @@ jobs:
         with:
           push: true
           tags: |
-            afalobaid9/flask-app:lateset
+            afalobaid9/flask-app:latest
             afalobaid9/flask-app:${{ github.sha }}
